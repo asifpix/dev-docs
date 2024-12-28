@@ -8,3 +8,20 @@ wp core download
 wp config create --dbname="YOUR_DB_NAME" --dbuser="root" --dbpass="" --dbhost="localhost" --path="YOUR_ROOT_PATH"
 ```
 [YOUR_ROOT_PATH] should be like *D:\wamp64\www\projects\your-project*
+3. These two commands are optional.
+```
+# You can open wp-config.php on your command line interface
+cat wp-config.php
+# If you want to shuffle salt keys then run this command
+wp config shuffle-salts
+```
+4. Creating Database
+```
+wp db create --path="YOUR_ROOT_PATH"
+```
+5. Installing the WordPress core.  
+YOUR_PROJECT_URL = http://localhost/projects/project_name  
+YOUR_PROJECT_TITLE = WordPress
+```
+wp core install --url="YOUR_PROJECT_URL" --title="YOUR_PROJECT_TITLE" --admin_user="admin" --admin_password="admin" --admin_email="email@email.com" --path="YOUR_ROOT_PATH"
+```
