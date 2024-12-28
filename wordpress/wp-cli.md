@@ -30,31 +30,19 @@ wp core install --url="YOUR_PROJECT_URL" --title="YOUR_PROJECT_TITLE" --admin_us
 | ------- | ----------- |
 | `wp core version` | Check wp version |
 | `wp core check-update` | Check core update | 
-| `wp core update` | Update wp core | 
+| `wp core update` | Update wp core |
 
 ## Commands for Database
-```
-# To check whole database size
-wp db size
+| Command | Description |
+| ------- | ----------- |
+| `wp db size` | Check whole database size |
+| `wp db size --tables` | Check database tables size | 
+| `wp db tables` | View all the database tables |
+| `wp db optimize` | Optimize the database tables |
+| `wp db repair` | Repair database |
+| `wp db check` | Check the database status |
+| `wp db export YOUR_DB_NAME.sql` | Eexport the whole database. [YOUR_DB_NAME] need to be replaced |
 
-# To check database tables size
-wp db size --tables
-
-# To view all the database tables
-wp db tables
-
-# To optimize the database tables
-wp db optimize
-
-# To repair database
-wp db repair
-
-# To check the database status
-wp db check
-
-# To export the whole database. [YOUR_DB_NAME] need to be replaced.
-wp db export YOUR_DB_NAME.sql
-```
 ## Commands for Site
 ```
 # To remove all posts and pages
