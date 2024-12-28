@@ -25,14 +25,14 @@ YOUR_PROJECT_TITLE = WordPress
 ```
 wp core install --url="YOUR_PROJECT_URL" --title="YOUR_PROJECT_TITLE" --admin_user="admin" --admin_password="admin" --admin_email="email@email.com" --path="YOUR_ROOT_PATH"
 ```
-## Commands for CORE
+## Core Commands
 | Command | Description |
 | ------- | ----------- |
 | `wp core version` | Check wp version |
 | `wp core check-update` | Check core update | 
 | `wp core update` | Update wp core |
 
-## Commands for Database
+## Database Commands
 | Command | Description |
 | ------- | ----------- |
 | `wp db size` | Check whole database size |
@@ -43,7 +43,7 @@ wp core install --url="YOUR_PROJECT_URL" --title="YOUR_PROJECT_TITLE" --admin_us
 | `wp db check` | Check the database status |
 | `wp db export YOUR_DB_NAME.sql` | Eexport the whole database. [YOUR_DB_NAME] need to be replaced |
 
-## Commands for Site
+## Site Commands
 | Command | Description |
 | ------- | ----------- |
 | `wp site empty` | Remove all posts and pages |
