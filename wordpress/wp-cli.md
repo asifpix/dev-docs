@@ -26,17 +26,11 @@ YOUR_PROJECT_TITLE = WordPress
 wp core install --url="YOUR_PROJECT_URL" --title="YOUR_PROJECT_TITLE" --admin_user="admin" --admin_password="admin" --admin_email="email@email.com" --path="YOUR_ROOT_PATH"
 ```
 ## Commands for CORE
-```
-# To check wp version
-wp core version
+| Command | Description |
+| `wp core version` | Check wp version |
+| `wp core check-update` | Check core update | 
+| `wp core update` | Update wp core | 
 
-# To check core update
-wp core check-update
-
-# To update wp core
-wp core update
-
-```
 ## Commands for Database
 ```
 # To check whole database size
@@ -79,3 +73,17 @@ wp config set WP_DEBUG_DISPLAY true / false
 
 # To set WP_DEBUG_LOG status in wp-config.php
 wp config set WP_DEBUG_LOG true / false
+```
+Command	Description
+wp plugin list	Lists all plugins.
+wp plugin status	Displays the status of plugins (active/inactive/available updates).
+wp plugin activate <plugin>	Activates a plugin.
+wp plugin deactivate <plugin>	Deactivates a plugin.
+wp plugin toggle <plugin>	Toggles a plugin between active and inactive states.
+wp plugin install <plugin>	Installs one or more plugins.
+wp plugin update <plugin>	Updates one or more plugins.
+wp plugin delete <plugin>	Deletes one or more plugins.
+wp plugin search <keyword>	Searches for plugins in the WordPress plugin repository.
+wp plugin is-installed <plugin>	Checks if a plugin is installed.
+wp plugin path [plugin]	Retrieves the path to the plugin.
+wp plugin uninstall <plugin>	Uninstalls a plugin (deletes data if supported by the plugin).
