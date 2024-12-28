@@ -27,6 +27,7 @@ wp core install --url="YOUR_PROJECT_URL" --title="YOUR_PROJECT_TITLE" --admin_us
 ```
 ## Commands for CORE
 | Command | Description |
+| ------- | ----------- |
 | `wp core version` | Check wp version |
 | `wp core check-update` | Check core update | 
 | `wp core update` | Update wp core | 
