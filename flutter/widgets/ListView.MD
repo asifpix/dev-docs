@@ -60,3 +60,31 @@ void main() {
 }
 
 ```
+Example 3: ListView.builder
+```
+import 'package:flutter/material.dart';
+
+final countries = [
+  'Bangladesh',
+  'India',
+  'Pakistan',
+  'Nepal',
+  'Bhutan',
+  'Maldive'
+];
+
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello Appbar'),
+        ),
+        body: ListView.builder(
+          padding: EdgeInsets.all(5.0),
+          itemCount: countries.length,
+          itemBuilder: (context, index) => ListTile(title: Text(countries[index])),
+        )),
+  ));
+}
+
+```
