@@ -10,8 +10,8 @@ List<String> countries = [
   'Bhutan',
   'Maldive'
 ];
-//
-var countryList = ...countries.map((country) => Text(country)).toList();
+
+//List<String> countryList = ...countries.map((country) => Text(country)).toList();
 
 void main() {
   runApp(MaterialApp(
